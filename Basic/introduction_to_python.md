@@ -1,6 +1,5 @@
 
 # Introduction to Python 
-![Introduction to Python]("C:\Users\sanik\Downloads\IntroPy.png")
 
 ## What is Python?
 Python is a **high-level**, **object-oriented** programming language that emphasizes code readability and simplicity. It is known for its flexibility and vast ecosystem, making it suitable for various programming tasks. Here are some key characteristics of Python:
