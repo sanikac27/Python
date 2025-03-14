@@ -18,7 +18,37 @@ print("Hello, World!")  # This is an inline comment
 
 ---
 
-## **2️⃣ What are Docstrings in Python?**
+## **2️⃣ Multiline Comments in Python**
+Python does **not** have a built-in syntax for multiline comments like other languages (e.g., `/* ... */` in C/Java). However, there are two common ways to achieve multiline comments:
+
+### **🔹 Using Consecutive `#` Symbols**
+```python
+# This is a multiline comment
+# in Python using multiple
+# single-line comments.
+```
+
+### **🔹 Using Triple Quotes (`"""` or `'''`)**
+Although triple quotes are typically used for docstrings, they can also be used as multiline comments **if not assigned to a variable or function**.
+
+```python
+"""
+This is a multiline comment
+using triple double quotes.
+"""
+
+'''
+This is another way to write
+multiline comments using
+triple single quotes.
+'''
+```
+
+⚠ **Note:** Unlike `#`, using triple quotes creates a string object in memory, so it's not a true comment but can serve as one in practice.
+
+---
+
+## **3️⃣ What are Docstrings in Python?**
 Docstrings (Documentation Strings) are **multi-line string literals** used to **document a module, function, class, or method**. Unlike comments, docstrings can be accessed at runtime.
 
 ### **📌 How to Write a Docstring?**
@@ -44,13 +74,13 @@ This function prints a greeting message.
 
 ---
 
-## **3️⃣ Difference Between Comments & Docstrings**
+## **4️⃣ Difference Between Comments & Docstrings**
 | Feature        | Comments | Docstrings |
 |--------------|----------|------------|
 | Syntax | Starts with `#` | Uses `"""` or `'''` |
 | Purpose | Explain code | Document functions, classes, modules |
 | Scope | Ignored by Python | Stored as `__doc__` and accessible |
-| Multi-line? | ❌ No | ✅ Yes |
+| Multi-line? | ✅ Yes (workaround) | ✅ Yes |
 | Access at Runtime? | ❌ No | ✅ Yes |
 
 ---
